@@ -1,0 +1,167 @@
+
+body{
+    font-family:helvetica;
+    margin:0px;
+
+    
+}
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    padding:20px;
+    
+        
+}
+.navbar span{
+    border-right:1px solid black;
+    padding-right:10px;
+}
+.links{
+    display:flex;
+    gap:30px;
+    align-items:center;
+    list-style:none;
+}
+.links a{
+    text-decoration:none;
+    transition:color 0.5s;
+}
+.links a:hover{
+    color:rgb(230, 187, 12);
+}
+.Hero-section{
+    position:relative;
+    padding:80px 40px;
+}
+.hero-background{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:linear-gradient(to right,#ede3d3,white);
+    border-radius:0 50px, 50px 0;
+    z-index:0;
+}
+.content{
+    position:relative;
+    z-index:1;
+}
+.content button{
+    padding:8px;
+    background-color:transparent;
+    border:1px solid black;
+}
+.About{
+    display:flex;
+}
+
+.About-content{
+
+    padding:50px;
+}
+.Stats{
+    display:flex;
+    gap:30px;
+}
+.stat{
+     border-left:1px solid black;
+     padding-left:30px;
+}
+
+.stat h3{
+    font-size:2em;
+    margin:0;
+    
+}
+.About span{
+    color:rgb(225, 133, 19);
+}
+.Projects{
+    padding:50px;
+}
+.Projects span{
+    color:rgb(219, 134, 31);
+}
+.Projects-container{
+    display:flex;
+    gap:30px;
+
+}
+
+.card{
+    border:1px solid white;
+    border-radius:7px;
+    width:300px;
+    height:200px;
+    overflow:hidden;
+    position:relative;
+    box-shadow:0px 4px 12px;
+    transition:transform 0.5s;
+}
+.card:hover{
+    transform:translateY(-7px);
+    border-color:aquamarine;
+    
+}
+.card img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.card a{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:50%;
+    padding:15px;justify-content:space-evenly;
+    color:white;
+    text-decoration: none;
+}
+.card a:hover{
+    color:rgb(217, 217, 14);
+}
+.Services{
+    padding:50px;
+}
+.service-container{
+    display:flex;
+    gap:20px;
+    
+
+
+}
+.S-card{
+    border:1px solid rgb(243, 150, 11);
+    width:300px;
+    height:200px;
+    display:flex;
+    align-items:center;
+    flex-direction:column;
+    justify-content:center;
+    border-radius:7px;
+    padding:20px;
+    background:linear-gradient(to bottom right,beige, white);
+    transition:transform 0.5s;
+}
+.S-card:hover{
+    transform:translateY(-7px);
+}
+.S-card button{
+    padding:10px;
+    border-radius:5px;
+    background:transparent;
+    border:1px solid black;
+}
+.S-card button:hover{
+    background:beige;
+}
+.Socials{
+    padding:10px;
+}
+.Copyright{
+    text-align:center;
+}
+.Services span{
+    color:rgb(227, 139, 15);
+}
