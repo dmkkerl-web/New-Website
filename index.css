@@ -1,13 +1,17 @@
-
+*{
+    box-sizing:border-box;
+}
 body{
     font-family:helvetica;
     margin:0px;
+    background:linear-gradient(to bottom right, rgb(42, 247, 158),rgb(10, 211, 242));
 
-    
 }
 .navbar{
     display:flex;
     justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
     padding:20px;
     
         
@@ -21,13 +25,17 @@ body{
     gap:30px;
     align-items:center;
     list-style:none;
+    flex-wrap:wrap;
+    padding:0px;
+    margin:0px;
 }
 .links a{
+    color:rgb(32, 35, 35);
     text-decoration:none;
     transition:color 0.5s;
 }
 .links a:hover{
-    color:rgb(230, 187, 12);
+    color:rgb(228, 235, 235);
 }
 .Hero-section{
     position:relative;
@@ -39,8 +47,8 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background:linear-gradient(to right,#ede3d3,white);
-    border-radius:0 50px, 50px 0;
+    background:linear-gradient(to right,rgb(243, 239, 243));
+    border-radius:0 50px 50px 0;
     z-index:0;
 }
 .content{
@@ -54,19 +62,24 @@ body{
 }
 .About{
     display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .About-content{
-
+    color:rgb(16, 11, 11);
+    text-align:center;
     padding:50px;
 }
 .Stats{
     display:flex;
     gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
 }
 .stat{
-     border-left:1px solid black;
-     padding-left:30px;
+     border-right:1px solid black;
+     padding-right:30px;
 }
 
 .stat h3{
@@ -75,24 +88,32 @@ body{
     
 }
 .About span{
-    color:rgb(225, 133, 19);
+    color:rgb(229, 239, 239);
 }
 .Projects{
     padding:50px;
 }
+.Projects h2{
+    text-align:center;
+}
+
 .Projects span{
-    color:rgb(219, 134, 31);
+    color:rgb(229, 239, 239);
 }
 .Projects-container{
     display:flex;
     gap:30px;
+    justify-content:center;
+    flex-wrap:wrap;
+
 
 }
 
 .card{
-    border:1px solid white;
+    
     border-radius:7px;
-    width:300px;
+    width:100%;
+    max-width:300px;
     height:200px;
     overflow:hidden;
     position:relative;
@@ -114,26 +135,25 @@ body{
     bottom:0;
     left:0;
     width:50%;
-    padding:15px;justify-content:space-evenly;
+    padding:15px;
     color:white;
     text-decoration: none;
 }
-.card a:hover{
-    color:rgb(217, 217, 14);
-}
+
 .Services{
     padding:50px;
+    text-align:center;
 }
 .service-container{
     display:flex;
     gap:20px;
-    
-
+    justify-content:center;
+    flex-wrap:wrap;
 
 }
 .S-card{
-    border:1px solid rgb(243, 150, 11);
-    width:300px;
+    width:100%;
+    max-width:350px;
     height:200px;
     display:flex;
     align-items:center;
@@ -141,7 +161,7 @@ body{
     justify-content:center;
     border-radius:7px;
     padding:20px;
-    background:linear-gradient(to bottom right,beige, white);
+    background:linear-gradient(to bottom right,rgb(14, 239, 255), rgba(255, 255, 255, 0.841));
     transition:transform 0.5s;
 }
 .S-card:hover{
@@ -154,7 +174,7 @@ body{
     border:1px solid black;
 }
 .S-card button:hover{
-    background:beige;
+    background:rgb(17, 253, 249);
 }
 .Socials{
     padding:10px;
@@ -163,5 +183,50 @@ body{
     text-align:center;
 }
 .Services span{
-    color:rgb(227, 139, 15);
+    color:rgb(229, 239, 239);
+}
+@media(max-width:768px){
+
+    .navbar{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .links{
+        justify-content:center;
+        gap:15px;
+    }
+
+    .Hero-section{
+        padding:50px 20px;
+        text-align:center;
+    }
+
+    .About-content{
+        padding:30px 20px;
+    }
+
+    .Stats{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .stat{
+        border-right:none;
+        padding-right:0;
+    }
+
+    .Projects{
+        padding:30px 20px;
+    }
+
+    .Services{
+        padding:30px 20px;
+    }
+
+    .card a{
+        width:100%;
+        text-align:center;
+    }
+
 }
