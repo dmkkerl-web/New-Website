@@ -1,13 +1,17 @@
 *{
     box-sizing:border-box;
 }
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+
+
 html{
     scroll-behavior:smooth;
 }
 body{
-    font-family:helvetica;
     margin:0px;
     background:linear-gradient(to bottom right, rgb(42, 247, 158),rgb(10, 211, 242));
+     font-family: 'Montserrat', sans-serif;
 
 }
 .navbar{
@@ -146,6 +150,9 @@ body{
     color:black;
     text-decoration: none;
 }
+.card a:hover{
+    color:rgb(0, 194, 228);
+}
 .Advanced-Projects {
     display:flex;
     flex-direction:column;
@@ -194,13 +201,10 @@ body{
 .Socials{
     padding:10px;
     flex-wrap:wrap;
- 
 
 }
 .Socials a{
     text-decoration:none;
-   
-  
 }
 .Copyright{
     text-align:center;
