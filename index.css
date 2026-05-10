@@ -223,6 +223,9 @@ body{
 }
 @media(max-width:768px){
 
+    body{
+        font-size:small;
+    }
     .navbar{
         flex-direction:column;
         text-align:center;
