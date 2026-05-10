@@ -1,6 +1,9 @@
 *{
     box-sizing:border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-family:helvetica;
     margin:0px;
@@ -37,7 +40,7 @@ body{
 .links a:hover{
     color:rgb(228, 235, 235);
 }
-.Hero-section{
+#Hero-section{
     position:relative;
     padding:80px 40px;
 }
@@ -60,7 +63,7 @@ body{
     background-color:transparent;
     border:1px solid black;
 }
-.About{
+#About{
     display:flex;
     justify-content:center;
     align-items:center;
@@ -87,17 +90,17 @@ body{
     margin:0;
     
 }
-.About span{
+#About span{
     color:rgb(229, 239, 239);
 }
-.Projects{
+#Projects{
     padding:50px;
 }
-.Projects h2{
+#Projects h2{
     text-align:center;
 }
 
-.Projects span{
+#Projects span{
     color:rgb(229, 239, 239);
 }
 .Advanced-Projects span{
@@ -151,7 +154,7 @@ body{
     flex-wrap:wrap; 
 }
 
-.Services{
+#Services{
     padding:50px;
     text-align:center;
 }
@@ -202,8 +205,17 @@ body{
 .Copyright{
     text-align:center;
 }
-.Services span{
+#Services span{
     color:rgb(229, 239, 239);
+}
+#Contacts{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+#Contacts span{
+      color:rgb(229, 239, 239);
 }
 @media(max-width:768px){
 
