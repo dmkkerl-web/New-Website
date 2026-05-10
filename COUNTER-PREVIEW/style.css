@@ -1,5 +1,9 @@
+
+
+
+
 .body{
-    background:linear-gradient(to bottom right,aqua,rgb(141, 190, 36));
+    background:linear-gradient(to bottom right,aqua,rgb(221, 229, 226));
     height:100vh;
     display:flex;
     flex-direction:column;
@@ -56,4 +60,14 @@
 }
 .links a:hover{
     color:aquamarine;
+}
+@media(max-width:768px){
+    .buttons{
+        flex-wrap:wrap;
+    }
+    .btn{
+        border:none;
+        border-radius:8px;
+        margin:10px;
+    }
 }

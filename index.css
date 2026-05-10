@@ -100,6 +100,9 @@ body{
 .Projects span{
     color:rgb(229, 239, 239);
 }
+.Advanced-Projects span{
+    color:white;
+}
 .Projects-container{
     display:flex;
     gap:30px;
@@ -138,6 +141,13 @@ body{
     padding:15px;
     color:white;
     text-decoration: none;
+}
+.Advanced-Projects {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    flex-wrap:wrap; 
 }
 
 .Services{
@@ -178,6 +188,13 @@ body{
 }
 .Socials{
     padding:10px;
+    flex-wrap:wrap;
+    gap:10px;
+
+}
+.Socials a{
+    text-decoration:none;
+    
 }
 .Copyright{
     text-align:center;

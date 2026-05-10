@@ -1,0 +1,77 @@
+body{
+    display:flex;
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+     font-family:Arial, SansSerif;
+     background-color:aliceblue;
+}
+.navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-evenly;
+    background:grey;
+    width:100%;
+    flex-wrap:wrap;
+    position:fixed;
+    top:0;
+
+}
+.links{
+    list-style:none;
+
+}
+.links a{
+    text-decoration:none;
+    color:aqua;
+}
+.links a:hover{
+    color:aquamarine;
+}
+#container{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:column;
+    border:1px solid black;
+    border-radius:8px;
+    padding:20px;
+    width:50%;
+    max-width:400px;
+    flex-wrap:wrap;
+    align-items:center;
+    background:linear-gradient(to bottom, grey,aliceblue)
+   
+}
+#container label{
+    padding:3%;
+
+}
+#container input{
+    width:50%;
+    margin:auto;
+    padding:4%;
+    text-align:center;
+}
+#container button{
+    margin-top:4%;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background-color:blue;
+    color:white;
+    cursor:pointer;
+
+}
+#container button:hover{
+    background-color:rgb(18, 135, 224);
+}
+#container button:active{
+    background-color:rgba(11, 185, 243, 0.858);
+}
+#DiceResult{
+    padding:10px;
+}
+#DiceImages img{
+    width:15%;
+    border-radius:8px;
+}
