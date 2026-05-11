@@ -90,7 +90,7 @@ body{
     flex-wrap:wrap;
 }
 .stat{
-     border-right:1px solid black;
+     border-right:2px solid white;
      padding-right:30px;
 }
 
@@ -158,12 +158,18 @@ body{
 .card a:hover{
     color:rgb(0, 194, 228);
 }
-.Advanced-Projects {
+.Advanced{
+    text-align:center;
+}
+.Advanced span{
+    color:aliceblue;
+}
+.A-Projects{
     display:flex;
-    flex-direction:column;
     justify-content:center;
     align-items:center;
     flex-wrap:wrap; 
+    gap:30px;
 }
 
 #Services{
@@ -187,11 +193,13 @@ body{
     justify-content:center;
     border-radius:7px;
     padding:20px;
-    background:linear-gradient(to bottom right,rgb(14, 239, 255), rgba(255, 255, 255, 0.841));
+    background:linear-gradient(to bottom right,rgb(14, 239, 255), rgba(9, 213, 148, 0.841,0.4));
+    border:1px solid white;
     transition:transform 0.5s;
 }
 .S-card:hover{
     transform:translateY(-7px);
+    border-color:blue;
 }
 .contact{
     padding:10px;
