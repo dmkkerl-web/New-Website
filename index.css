@@ -94,6 +94,15 @@ background: linear-gradient(
     color:rgba(62, 135, 251, 0.992);
 
 }
+.text{
+    flex-wrap:wrap;
+    display:block;
+    text-align:left;
+}
+.text p{
+    width:100%;
+    max-width:400px;
+}
 
 .About-content{
     display:flex;
@@ -327,6 +336,14 @@ background: linear-gradient(
          display:flex;
         flex-direction:column;
     
+    }
+    .text{
+        display:flex;
+        justify-content:center;
+        
+    }
+    .text p{
+        width:100%;
     }
 
     .Stats{
