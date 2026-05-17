@@ -10,11 +10,18 @@ html{
 }
 body{
     margin:0px;
-    background:linear-gradient(to bottom right, rgb(42, 247, 158),rgb(10, 211, 242));
-     font-family: 'Montserrat', sans-serif;
+  
+background: linear-gradient(
+    135deg,
+    #0B1120,
+    #111827,
+    #172554
+);
+    font-family: 'Montserrat', sans-serif;
+
 
 }
-.navbar{
+#navbar{
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -23,14 +30,14 @@ body{
     position:sticky;
     top:0;
     z-index:1000;
-    background: rgba(255, 255, 255, 0.2);
-
-    
-        
+    background: rgba(5,2,20,0.7);
+    backdrop-filter: blur(10px);
+    color:white;
 }
 .navbar span{
     border-right:1px solid black;
     padding-right:10px;
+    border-color:pink;
 }
 .links{
     display:flex;
@@ -42,12 +49,12 @@ body{
     margin:0px;
 }
 .links a{
-    color:rgb(32, 35, 35);
+    color:white;
     text-decoration:none;
     transition:color 0.5s;
 }
 .links a:hover{
-    color:rgb(228, 235, 235);
+    color:rgb(16, 197, 197);
 }
 #Hero-section{
     position:relative;
@@ -59,39 +66,60 @@ body{
     left:0;
     width:100%;
     height:100%;
-    background:linear-gradient(to right,rgb(243, 239, 243));
-    border-radius:0 50px 50px 0;
+    background-color:#0D1024;
+    backdrop-filter:blur(12px);
+    border-radius:0 0px 50px 0;
     z-index:0;
+    border:1px solid rgba(255,255,255,0.1);
 }
 .content{
     position:relative;
     z-index:1;
+    color:white;
+    font-size:20px;
+}
+.content span{
+    color:rgba(62, 135, 251, 0.992);
 }
 .content button{
     padding:8px;
     background-color:transparent;
     border:1px solid black;
 }
-#About{
+.About-Wrapper{
     display:flex;
-    justify-content:center;
-    align-items:center;
+}
+#About{
+    text-align:center;
+    color:rgba(62, 135, 251, 0.992);
+
 }
 
 .About-content{
+    display:flex;
+    justify-content:space-between;
     color:rgb(16, 11, 11);
     text-align:center;
     padding:50px;
+    color:white;
 }
 .Stats{
+    border:1px solid rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
     display:flex;
-    gap:30px;
+    gap:70px;
     justify-content:center;
     flex-wrap:wrap;
+    margin:20px;
 }
 .stat{
-     border-right:2px solid white;
-     padding-right:30px;
+     border:none;
+     padding:20px;
+     border-radius:100px;
+     background:rgba(13, 73, 253, 0.639);
+     color:aliceblue;
+     font-size:small;
 }
 
 .stat h3{
@@ -102,8 +130,23 @@ body{
 #About span{
     color:rgb(229, 239, 239);
 }
+#Tools-wrapper{
+        justify-content:center;
+        align-items:center;    
+        border:1px solid rgba(255,255,255,0.1);  
+}
+.Tools{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+.langs{
+    display:flex;
+    gap:20px;
+}
 #Projects{
     padding:50px;
+    color:rgba(62, 135, 251, 0.992);
 }
 #Projects h2{
     text-align:center;
@@ -125,29 +168,29 @@ body{
 }
 
 .card{
-    
-    border-radius:7px;
     width:100%;
     max-width:300px;
     height:200px;
     overflow:hidden;
     position:relative;
-    box-shadow:0px 4px 12px;
     transition:transform 0.5s;
-    background-color:white;
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius:7px;
+
 }
 .badge{
     position:absolute;
-    top:-10px;
-    left:0;
-    background:#e8f712;
+    top:5px;
+    left:5px;
+    background:rgba(255, 255, 255, 0.63);
+    backdrop-filter:blur(12px);
     font-weight:bold;
-    border-radius:3px;
-    padding:5px 10px;
-    font-size:14px;
-    
-    
-
+    border-radius:20px;
+    padding:0px 30px;
+    font-size:12px;
+    color:black;
 }
 .card:hover{
     transform:translateY(-7px);
@@ -165,7 +208,7 @@ body{
     left:0;
     width:100%;
     padding:15px;
-    color:black;
+    color:white;
     text-decoration: none;
 }
 .card a:hover{
@@ -173,6 +216,8 @@ body{
 }
 .Advanced{
     text-align:center;
+    color:rgba(62, 135, 251, 0.992);
+    
 }
 .Advanced span{
     color:aliceblue;
@@ -188,6 +233,7 @@ body{
 #Services{
     padding:50px;
     text-align:center;
+    color:rgba(62, 135, 251, 0.992);
 }
 .service-container{
     display:flex;
@@ -206,36 +252,42 @@ body{
     justify-content:center;
     border-radius:7px;
     padding:20px;
-    background:linear-gradient(to bottom right,rgb(14, 239, 255), rgba(9, 213, 148, 0.841,0.4));
-    border:1px solid white;
     transition:transform 0.5s;
+    background-color: rgba(255,255,255,0.05);
+    color:white;
+    border:1px  solid rgba(255,255,255,0.1);
 }
 .S-card:hover{
     transform:translateY(-7px);
-    border-color:blue;
+    border-color:rgb(11, 206, 93);
 }
 .contact{
     padding:10px;
     border-radius:5px;
-    background:transparent;
-    border:1px solid black;
+    background:rgba(62, 135, 251, 0.992);
+    border:none;
     text-decoration:none;
+    color:white;
 }
 .S-card button:hover{
     background:rgb(17, 253, 249);
 }
 .Socials{
+    display:flex;
     padding:10px;
     flex-wrap:wrap;
+    margin:20px;
+    gap:20px;
 
 }
 .Socials a{
-    text-decoration:none;
-    
+    text-decoration:none;    
 }
 
 .Copyright{
-    text-align:center;
+    text-align:left;
+    color:white;
+    padding:20px;
 }
 #Services span{
     color:rgb(229, 239, 239);
@@ -245,6 +297,7 @@ body{
     flex-direction:column;
     justify-content:center;
     align-items:center;
+    color:rgba(62, 135, 251, 0.992);
 }
 #Contacts span{
       color:rgb(229, 239, 239);
@@ -254,7 +307,7 @@ body{
     body{
         font-size:small;
     }
-    .navbar{
+    #navbar{
         flex-direction:column;
         text-align:center;
     }
@@ -271,16 +324,22 @@ body{
 
     .About-content{
         padding:30px 20px;
+         display:flex;
+        flex-direction:column;
+    
     }
 
     .Stats{
         flex-direction:column;
         align-items:center;
+        border:none;
+        border:1px solid rgba(255,255,255,0.1);
     }
 
     .stat{
         border-right:none;
         padding-right:0;
+        background:none;
     }
 
     .Projects{
