@@ -1,11 +1,16 @@
+async function updateViews() {
+  try {
+    const response = await fetch(
+      "https://count.cab/hit/dmkkerl-portfolio"
+    );
 
+    const data = await response.json();
 
-fetch("https://count.cab/hit/Dennis-M-Portfolio/views")
-  .then(response => response.json())
-  .then(data => {
     document.getElementById("views").innerText =
-      `👁 ${data.value}  Views`;
-  })
-  .catch(error => {
+      `👁 ${data.count} Portfolio Views`;
+  } catch (error) {
     console.log(error);
-  });
+  }
+}
+
+updateViews();
