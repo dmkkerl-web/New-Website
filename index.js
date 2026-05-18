@@ -1,6 +1,6 @@
 
 
-fetch("https://api.countapi.xyz/hit/Dennis-M-Portfolio/views")
+fetch("https://count.cab/hit/Dennis-M-Portfolio/views")
   .then(response => response.json())
   .then(data => {
     document.getElementById("views").innerText =
