@@ -330,11 +330,15 @@ background: linear-gradient(
         padding:50px 20px;
         text-align:center;
     }
+    .content{
+        font-size:medium;
+    }
 
     .About-content{
         padding:30px 20px;
          display:flex;
         flex-direction:column;
+        
     
     }
     .text{
