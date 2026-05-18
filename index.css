@@ -60,15 +60,6 @@ background: linear-gradient(
     position:relative;
     padding:80px 40px;
 }
-.port-views{
-    position:absolute;
-    right:40px;
-    top:100px;
-    z-index:1;
-    color:white;
-    font-size:20px;
-}
-
 .hero-background{
     position:absolute;
     top:0;
@@ -81,6 +72,7 @@ background: linear-gradient(
     z-index:0;
     border:1px solid rgba(255,255,255,0.1);
 }
+
 .content{
     position:relative;
     z-index:1;
