@@ -34,10 +34,15 @@ background: linear-gradient(
     backdrop-filter: blur(10px);
     color:white;
 }
-.navbar span{
-    border-right:1px solid black;
+#navbar span{
+    border-right:2px solid white;
     padding-right:10px;
-    border-color:pink;
+}
+.clock-container{
+    padding:10px;
+    font-family:monospace;
+    font-size:14px;
+    font-weight:bold;
 }
 .links{
     display:flex;
@@ -114,7 +119,7 @@ background: linear-gradient(
     color:white;
 }
 .Stats{
-    border:1px solid rgba(255,255,255,0.1);
+    border:1px solid rgba(3, 180, 220, 0.822);
     padding:20px;
     border-radius:10px;
     display:flex;
@@ -127,7 +132,7 @@ background: linear-gradient(
      border:none;
      padding:20px;
      border-radius:100px;
-     background:rgba(13, 73, 253, 0.639);
+     background:hsla(225, 98%, 52%, 10%);
      color:aliceblue;
      font-size:small;
 }
@@ -143,7 +148,8 @@ background: linear-gradient(
 #Tools-wrapper{
         justify-content:center;
         align-items:center;    
-        border:1px solid rgba(255,255,255,0.1);  
+        border:1px solid hsla(225, 98%, 52%, 0.305); 
+        border-radius:10px;
 }
 .Tools{
     display:flex;
