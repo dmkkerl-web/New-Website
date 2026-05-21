@@ -369,18 +369,29 @@ background: linear-gradient(
     }
 
     .Stats{
+        position:relative;
         flex-direction:column;
         align-items:center;
         border:none;
         border:1px solid rgba(255,255,255,0.1);
+        width:400px;
+        height:500px;
     }
 
     .stat{
+        padding:0;
         border-right:none;
         padding-right:0;
         background:none;
     }
 
+    #Tools-wrapper{
+        position:relative;
+        right:-230px;
+        top:-280px;
+        transform:rotate(90deg);
+        transform-origin:center;
+    }
     .Projects{
         padding:30px 20px;
     }
