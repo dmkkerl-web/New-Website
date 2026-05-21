@@ -233,17 +233,20 @@ background: linear-gradient(
 .Advanced{
     text-align:center;
     color:rgba(62, 135, 251, 0.992);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
     
 }
 .Advanced span{
     color:aliceblue;
 }
 .A-Projects{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-wrap:wrap; 
+    display:grid;
+    grid-template-columns:repeat(3,300px);
     gap:30px;
+
 }
 
 #Services{
@@ -352,6 +355,14 @@ background: linear-gradient(
         display:flex;
         justify-content:center;
         
+    }
+
+    .A-Projects{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+          justify-content:center;
+        align-items:center;
     }
     .text p{
         width:100%;
