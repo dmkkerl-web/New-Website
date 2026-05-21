@@ -344,12 +344,14 @@ background: linear-gradient(
         font-size:small;
     }
 
+
     .About-content{
-        padding:30px 20px;
-         display:flex;
+        padding:0;
+        display:flex;
         flex-direction:column;
+        justify-content:center;
+        align-items:center;
         
-    
     }
     .text{
         display:flex;
@@ -369,13 +371,14 @@ background: linear-gradient(
     }
 
     .Stats{
-        position:relative;
+        display:flex;
         flex-direction:column;
         align-items:center;
+        justify-content:center;
         border:none;
         border:1px solid rgba(255,255,255,0.1);
-        width:400px;
-        height:500px;
+        width:300px;
+        height:400px;
     }
 
     .stat{
@@ -385,13 +388,7 @@ background: linear-gradient(
         background:none;
     }
 
-    #Tools-wrapper{
-        position:relative;
-        right:-230px;
-        top:-280px;
-        transform:rotate(90deg);
-        transform-origin:center;
-    }
+    
     .Projects{
         padding:30px 20px;
     }
