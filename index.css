@@ -71,11 +71,19 @@ background: linear-gradient(
     left:0;
     width:100%;
     height:100%;
-    background-color:#0D1024;
+    background:linear-gradient(to bottom,rgba(4, 4, 110, 0.6),  rgba(5,2,20,0.7)), 
+    url('ASSETS/Copilot_20260521_175159.png');
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
     backdrop-filter:blur(12px);
-    border-radius:0 0px 50px 0;
+    opacity:0;
+    border-radius:0;
     z-index:0;
-    border:1px solid rgba(255,255,255,0.1);
+    animation:fadein 2s ease forwards;
+}
+@keyframes fadein{
+    to{opacity:1;}
 }
 
 .content{
@@ -244,8 +252,10 @@ background: linear-gradient(
 }
 .A-Projects{
     display:grid;
-    grid-template-columns:repeat(3,300px);
+    grid-template-columns:repeat(3,minmax(200px,300px));
     gap:30px;
+    overflow:hidden;
+    padding:10px;
 
 }
 
@@ -346,7 +356,7 @@ background: linear-gradient(
 
 
     .About-content{
-        padding:20px 0;
+        padding:0px 20px;
         display:flex;
         flex-direction:column;
         justify-content:center;
@@ -356,6 +366,7 @@ background: linear-gradient(
     .text{
         display:flex;
         justify-content:center;
+        text-align:center;
         
     }
 
