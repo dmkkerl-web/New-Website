@@ -8,7 +8,6 @@ containers.forEach((container,index)=>{
 
 
     function update(){
-    console.log("hello, i am working");
     left.style.display=container.scrollLeft > 0? 'block' : 'none';
     const maxScroll=container.scrollWidth - container.clientWidth;
     right.style.display =container.scrollLeft < maxScroll ? 'block' :'none';
