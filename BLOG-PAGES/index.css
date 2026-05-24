@@ -195,17 +195,21 @@ ul{
 }
 @media(max-width:768px){
     .navbar{
-        padding:10px;
         display:flex;
-        flex-wrap:wrap;
+        justify-content:center;
+        flex-direction:column;
+        gap:20px;
 
+    }
+    .navbar span{
+        color:white;
+    }
+    .navbar h1{
+        font-family:cursive;
     }
     body{
         background:none;
         font-size:small;
-    }
-    .Intro{
-        
     }
     .Text{
         display:flex;
@@ -233,7 +237,6 @@ ul{
     }
     .Trend-text{
         padding:10px;
-        overflow-y:auto;
     }
     .buttons button{
         padding:10px 5px;
@@ -250,5 +253,10 @@ ul{
     .support p{
         width:300px;
         text-align:center;
+    }
+    footer{
+        border-radius:0px;
+        background-color:hsla(0, 0%, 50%, 0.638);
+        padding:30px;
     }
 }
