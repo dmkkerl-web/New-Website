@@ -184,12 +184,10 @@ background: linear-gradient(
     color:white;
 }
 .Projects-container{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(200px ,300px));
     gap:30px;
     justify-content:center;
-    flex-wrap:wrap;
-
-
 }
 
 .card{
@@ -366,11 +364,16 @@ background: linear-gradient(
     }
     .text{
         display:flex;
+
         justify-content:center;
         text-align:center;
         
     }
-
+    .Projects-container{
+        display:flex;
+        align-items:center;
+        flex-direction: column;
+    }
     .A-Projects{
         display:flex;
         flex-direction:column;
