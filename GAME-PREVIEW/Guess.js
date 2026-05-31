@@ -100,7 +100,7 @@ ROLL.onclick = function () {
             luckynumscopy.splice(index, 1);
         }
     }
-
+    
     console.log("Matches:", matches); // DEBUG
 
     if (matches == 5) {

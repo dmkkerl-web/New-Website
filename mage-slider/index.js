@@ -10,7 +10,7 @@ function leftupdate(){
         left :maxwidth/3,// or clientWidth
         behavior:'smooth'
     });
-    
+
    
 }   
 function rightupdate(){
