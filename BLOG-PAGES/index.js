@@ -6,13 +6,14 @@ containers.forEach((container,index)=>{
    let right =rightarrow[index];
     let left =leftarrow[index];
 
-
+//function to hide and display the scroll buttons
     function update(){
     left.style.display=container.scrollLeft > 0? 'block' : 'none';
     const maxScroll=container.scrollWidth - container.clientWidth;
     right.style.display =container.scrollLeft < maxScroll ? 'block' :'none';
 
 }
+//logic that handles the scrolling when buttons are clicked
 left.addEventListener('click',()=>{
     container.scrollBy({ left: -250, behavior: 'smooth'});
 });
