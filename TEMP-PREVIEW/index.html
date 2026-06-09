@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet"href="temp.css">
+    <style>
+        .p{
+            color:purple;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -17,13 +23,29 @@
         <h1>Temperature converter Program</h1>
         <hr>
         <label>Enter a Value</label>
-        <input type="number"id="userInput"placeholder="degrees/kelvins">
+        <input type="number"id="userInput"placeholder="eg:20,200,1000....">
         <p id="display2"class="display2"></p>
-        <p>Convert to</p>
+        <p class="p">Convert From</p>
+        <div>
+            <input type="radio" id="FromCelsius"name="From">
+            <label for="FromCelsius">Celcius</label>
+            <input type="radio"id="FromKelvin"name="From">
+            <label for="FromKelvin">Kelvin</label>
+            <input type="radio"id="FromFahrenheit"name="From">
+            <label for="FromFahrenheit">Fahrenheit</label>
+        </div>
+        <div>
+
+        </div>
+        <p class="p">Convert to</p>
         <div class="radios">
             <div>
                 <input type="radio" id="Degrees"name="unit">
-                <label for="Degrees">Degrees</label>
+                <label for="Degrees">Celsius</label>
+            </div>
+            <div>
+                <input type="radio"id="Fahrenheit"name="unit">
+                <label for="Fahrenheit">Fahrenheit</label>
             </div>
             <div>
                      <input type="radio"id="Kelvin"name="unit">

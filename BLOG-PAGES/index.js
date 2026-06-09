@@ -25,3 +25,30 @@ window.addEventListener('resize',update);
 
 update();
 })
+
+//function to change the theme of the page between dark and light
+let isClicked=true;
+let Toggle =document.getElementById("Toggle").onclick =function(){
+      
+    if (isClicked){
+          UpdateDark();
+          isClicked =false;
+        
+    }
+    else{
+        UpdateLight();
+        isClicked =true;
+    }
+  
+};
+function UpdateDark(){
+    document.getElementById("body").style.background="black"
+    document.getElementById("body").style.color="white"
+    document.getElementById("Toggle").innerHTML="Light"
+
+}
+function UpdateLight(){
+    document.getElementById("body").style.background ="white"
+    document.getElementById("body").style.color="black"
+    document.getElementById("Toggle").innerHTML="Dark"
+}
