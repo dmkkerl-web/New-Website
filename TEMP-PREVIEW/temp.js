@@ -28,9 +28,9 @@ const Unit=273;
 
 Convertbtn.onclick =function(){
     Userinput=document.getElementById("userInput").value;
-    try{
+   
         
-    }
+    
     if(Userinput==false){
         Display2.textContent=`You need to input a value`;
     }
