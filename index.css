@@ -330,6 +330,39 @@ background: linear-gradient(
 #Contacts span{
       color:rgb(229, 239, 239);
 }
+#side-bar{
+    
+    display:flex;
+    transform:translateX(-120px);
+    transition:transform 0.4s ease;
+    align-items:center;
+    justify-content:center;
+    height:50%;
+    border:1px solid rgb(141, 141, 152);
+    width:115px;
+    padding:10px;
+    position:fixed;
+    z-index:2000;
+    top:calc( 50%-485px);
+    border-radius:7px;
+    backdrop-filter: blur(20px);
+    
+}
+
+
+#side-bar nav{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+}
+.Toggle{
+
+    display:none;
+}
+#side-bar nav a{
+    color:white;
+    text-decoration: none;
+}
 @media(max-width:768px){
 
     body{
@@ -340,9 +373,12 @@ background: linear-gradient(
         text-align:center;
     }
 
+    .Toggle{
+        display:flex;
+    align-self:flex-start;
+    }
     .links{
-        justify-content:center;
-        gap:15px;
+        display:none;
     }
 
     .Hero-section{
