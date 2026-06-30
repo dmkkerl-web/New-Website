@@ -337,7 +337,7 @@ background: linear-gradient(
     transition:transform 0.4s ease;
     align-items:center;
     justify-content:center;
-    height:50%;
+    height:350px;
     border:1px solid rgb(141, 141, 152);
     width:115px;
     padding:10px;
@@ -371,6 +371,7 @@ background: linear-gradient(
     #navbar{
         flex-direction:column;
         text-align:center;
+
     }
 
     .Toggle{
