@@ -20,11 +20,17 @@ function stop(){
     }
 }
 function Reset(){
+    if(!running){
     starttime =0;
     elapsedtime =0;
     running =false;
 
     display.textContent =`00:00:00:00`;
+    }
+    else{
+
+    }
+    
 }
 function update(){
     let currentTime= Date.now();

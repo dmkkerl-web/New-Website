@@ -403,8 +403,24 @@ background: linear-gradient(
         display:flex;
 
         justify-content:center;
-        text-align:center;
+        align-items:center;
         
+    }
+    .Hero-wrapper{
+        display:flex;
+        flex-direction:column;  
+        justify-content:center;
+        align-items: center; 
+        border-color:rgba(3, 48, 210, 0.706);
+    }
+    #Tools-wrapper{
+        display:flex;
+        width:250px;
+    
+    }
+    .Tools{
+        display:flex;
+        flex-direction:column;
     }
     .Projects-container{
         display:flex;
