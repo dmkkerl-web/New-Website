@@ -23,6 +23,7 @@ background: linear-gradient(
 }
 #navbar{
     display:flex;
+
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
@@ -372,6 +373,7 @@ background: linear-gradient(
         font-size:small;
     }
     #navbar{
+        width:100%;
         flex-direction:column;
         text-align:center;
 
