@@ -366,7 +366,7 @@ background: linear-gradient(
 }
 @media(max-width:768px){
     *{
-        margin:0;
+        
         box-sizing:border-box;
     }
     body{
