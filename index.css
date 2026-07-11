@@ -368,7 +368,13 @@ background: linear-gradient(
     text-decoration: none;
 }
 @media(max-width:768px){
-
+.Body{
+    display:none;
+}
+.Maintenance{
+    display:block;
+    color:white;
+}
     body{
         font-size:small;
     }
