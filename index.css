@@ -476,3 +476,14 @@ background: linear-gradient(
     }
 
 }
+.Body{
+    display:none;
+}
+.Maintenance{
+    display:block;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
