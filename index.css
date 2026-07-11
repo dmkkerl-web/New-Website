@@ -368,10 +368,7 @@ background: linear-gradient(
     text-decoration: none;
 }
 @media(max-width:768px){
-    *{
-        
-        box-sizing:border-box;
-    }
+
     body{
         font-size:small;
     }
