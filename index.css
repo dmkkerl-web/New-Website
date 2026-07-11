@@ -181,6 +181,9 @@ background: linear-gradient(
 #Projects span{
     color:rgb(229, 239, 239);
 }
+#Projects a{
+    text-align:center;
+}
 .Advanced-Projects span{
     color:white;
 }
