@@ -369,10 +369,10 @@ background: linear-gradient(
 }
 @media(max-width:768px){
 .Body{
-    display:none;
+    display:block;
 }
 .Maintenance{
-    display:block;
+    display:none;
     color:white;
 }
     body{
@@ -483,10 +483,10 @@ background: linear-gradient(
 
 }
 .Body{
-    display:none;
+    display:block;
 }
 .Maintenance{
-    display:block;
+    display:none;
     color:white;
     display:flex;
     align-items:center;
