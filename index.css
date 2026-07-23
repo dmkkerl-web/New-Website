@@ -380,6 +380,7 @@ background: linear-gradient(
     }
     #navbar{
         width:100%;
+        box-sizing:border-box;
         flex-direction:column;
         text-align:center;
 
