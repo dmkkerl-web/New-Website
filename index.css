@@ -368,6 +368,9 @@ background: linear-gradient(
     text-decoration: none;
 }
 @media(max-width:768px){
+    *{
+        margin:0;
+    }
 .Body{
     display:block;
 }
