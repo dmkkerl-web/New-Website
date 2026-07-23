@@ -368,9 +368,6 @@ background: linear-gradient(
     text-decoration: none;
 }
 @media(max-width:768px){
-    *{
-        margin:0;
-    }
 .Body{
     display:block;
 }
@@ -398,7 +395,7 @@ background: linear-gradient(
     }
 
     #Hero-section{
-        padding:50px 20px;
+
         text-align:left;
     }
     .content{
