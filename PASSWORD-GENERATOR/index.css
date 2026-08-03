@@ -15,7 +15,7 @@ body{
     width:100%;
     padding:20px;
     display:flex;
-    justify-content:space-between;
+    justify-content:space-evenly;
     box-sizing:border-box;
     
 }
@@ -39,11 +39,20 @@ body{
     
 
 }
+.container h1{
+    font-size:small;
+}
+#generatebtn{
+    padding:10px;
+}
 .container button{
     margin:10%;
 }
-.password{
+#password{
     margin:20px;
+    font-size:large;
+    font-weight:bold;
+
 }
 @media(max-width:768px){
     .navbar{

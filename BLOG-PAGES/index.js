@@ -52,3 +52,9 @@ function UpdateLight(){
     document.getElementById("body").style.color="black"
     document.getElementById("Toggle").innerHTML="Dark"
 }
+
+//loading-screen logic
+window.addEventListener('load',()=>{
+    const LoadingPage=document.getElementById('loadingPage');
+    LoadingPage.classList.add('hidden');
+})

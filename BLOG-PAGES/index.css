@@ -6,6 +6,43 @@
 body{
     min-height:100vh;
 }
+#loadingPage{
+    background:linear-gradient(
+        to bottom right,
+        hsla(33, 96%, 37%, 0.773),
+        rgb(198, 181, 181)
+    );
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width:100%;
+    height:100vh;
+    z-index:100000;
+    transition: visibility 0.5s ease , opacity 0.5s ease;
+}
+.spinner{
+    border:5px solid white;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    border-top:lightpink;
+    animation:spin 1s linear infinite;
+}
+.hidden{
+    opacity:0;
+    visibility:hidden;
+}
+@keyframes spin{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
+}
 #Toggle{
     padding:5px;
     border:none;

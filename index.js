@@ -38,3 +38,9 @@ function CloseSideBar(){
     console.log("hiding sidebar")
     sidebar.style.transform="translateX(-120px)";
 }
+
+//loading page logic
+window.addEventListener('load',()=>{
+    const loadingScreen=document.getElementById('loading-screen');
+    loadingScreen.classList.add('hidden');
+})

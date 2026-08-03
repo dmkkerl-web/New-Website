@@ -6,10 +6,12 @@ body{
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .navbar{
+    box-sizing: border-box;
     position:absolute;
     top:0;
     left:0;
     width:100%;
+    padding:10px;
     background-color:antiquewhite;
     display:flex;
     align-items:center;

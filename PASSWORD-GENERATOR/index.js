@@ -17,7 +17,9 @@ function generatePassword(length,uppercase,lowercase,numbers,specialchars){
     }
     for(let i=0; i<length; i++){
         let index= Math.floor(Math.random()*allowedchars.length);
-        password += allowedchars[index];
+
+        password += allowedchars[index] + ' ';
+        
     }
     return password;
 }
@@ -28,7 +30,7 @@ function generatePassword(length,uppercase,lowercase,numbers,specialchars){
 const PasswordLength=8;
 const includeUppercase=true;
 const includelowercase=true;
-const includeSpecialchars=true;
+const includeSpecialchars=false;
 const includeNumbers=true;
 
 
