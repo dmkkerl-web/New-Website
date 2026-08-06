@@ -36,7 +36,7 @@ Button.addEventListener('click',()=>{
 
 function CloseSideBar(){
     console.log("hiding sidebar")
-    sidebar.style.transform="translateX(-120px)";
+    sidebar.style.transform="translateX(-200px)";
 }
 
 //loading page logic

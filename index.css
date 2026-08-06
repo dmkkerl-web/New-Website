@@ -43,7 +43,6 @@ html{
     scroll-behavior:smooth;
 }
 body{
-    box-sizing: border-box;
 background: linear-gradient(
     135deg,
     #0B1120,
@@ -56,7 +55,8 @@ background: linear-gradient(
 }
 #navbar{
     display:flex;
-
+    width:100%;
+    box-sizing: border-box;
     justify-content:space-between;
     align-items:center;
     flex-wrap:wrap;
@@ -135,8 +135,9 @@ background: linear-gradient(
     background-color:transparent;
     border:1px solid black;
 }
-.About-Wrapper{
-    display:flex;
+.Hero-wrapper
+{
+    margin-top:50px;
 }
 #About{
     text-align:center;
@@ -154,6 +155,7 @@ background: linear-gradient(
 }
 
 .About-content{
+
     line-height: 180%;
     display:flex;
     justify-content:space-between;
@@ -393,9 +395,7 @@ background: linear-gradient(
 }
 
 @media(max-width:768px){
-*{
-    box-sizing:border-box;
-}
+
 #loading-screen{
     background:linear-gradient(
         to bottom right,
@@ -441,7 +441,7 @@ background: linear-gradient(
 #side-bar{
     
     display:flex;
-    transform:translateX(-120px);
+    transform:translateX(-200px);
     transition:transform 0.4s ease;
     align-items:center;
     justify-content:center;
@@ -454,6 +454,7 @@ background: linear-gradient(
     top:calc( 50%-485px);
     border-radius:7px;
     backdrop-filter: blur(20px);
+    overflow:hidden;
 }
 #side-bar nav a{
     color:white;
@@ -462,10 +463,7 @@ background: linear-gradient(
 .Body{
     display:block;
 }
-.Maintenance{
-    display:none;
-    color:white;
-}
+
     body{
         font-size:small;
     }
@@ -526,14 +524,14 @@ background: linear-gradient(
         flex-direction:column;
     }
     .Projects-container{
-       display:grid;
-       overflow:hidden;
-       grid-template-columns:repeat(2,minmax(200px,250px));
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
     }
     .A-Projects{
-        display:grid;
-       overflow:hidden;
-       grid-template-columns:repeat(2,minmax(200px,250px));
+        display:flex;
+        flex-direction:column;
     }
     .text p{
         width:100%;
