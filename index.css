@@ -221,7 +221,7 @@ background: linear-gradient(
     gap:20px;
 }
 #Projects{
-    padding:50px;
+    padding-bottom:50px;
     color:rgba(62, 135, 251, 0.992);
 }
 #Projects h2{
@@ -556,7 +556,7 @@ background: linear-gradient(
     }
 
     
-    .Projects{
+    #Projects{
         padding:30px 20px;
     }
 
