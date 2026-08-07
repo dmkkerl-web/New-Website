@@ -63,11 +63,12 @@
 }
 @media(max-width:768px){
     .buttons{
-        flex-wrap:wrap;
+        font-size:small;
+        
     }
     .btn{
         border:none;
         border-radius:8px;
-        margin:10px;
+        margin-top:10px;
     }
 }

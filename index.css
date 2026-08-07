@@ -43,6 +43,7 @@ html{
     scroll-behavior:smooth;
 }
 body{
+    margin:0;
 background: linear-gradient(
     135deg,
     #0B1120,
@@ -50,6 +51,7 @@ background: linear-gradient(
     #172554
 );
     font-family: monospace;
+    font-size:large;
 
 
 }
@@ -128,7 +130,7 @@ background: linear-gradient(
     font-size:20px;
 }
 .content span{
-    color:rgba(62, 135, 251, 0.992);
+    color:rgba(3, 255, 58, 0.992);
 }
 .content button{
     padding:8px;
@@ -148,6 +150,7 @@ background: linear-gradient(
     flex-wrap:wrap;
     display:block;
     text-align:left;
+    margin-bottom:20px;
 }
 .text p{
     width:100%;
@@ -166,19 +169,17 @@ background: linear-gradient(
 }
 .Stats{
     border:1px solid rgba(3, 180, 220, 0.822);
-    padding:20px;
+    padding:10px;
     border-radius:10px;
     display:flex;
     gap:70px;
     justify-content:center;
+    align-items:center;
     flex-wrap:wrap;
-    margin:20px;
 }
 .stat{
      border:none;
      padding:20px;
-     border-radius:100px;
-     background:hsla(225, 98%, 52%, 10%);
      color:aliceblue;
      font-size:small;
 }
@@ -222,6 +223,7 @@ background: linear-gradient(
 }
 #Projects{
     padding-bottom:50px;
+    padding-top:20px;
     color:rgba(62, 135, 251, 0.992);
 }
 #Projects h2{
@@ -316,13 +318,28 @@ background: linear-gradient(
     padding:50px;
     text-align:center;
     color:rgba(62, 135, 251, 0.992);
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    align-items:center;
+
 }
 .service-container{
     display:flex;
-    gap:20px;
     justify-content:center;
     flex-wrap:wrap;
 
+}
+.Education-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    flex-direction:column;
+
+}
+.Education-container hr{
+    width:100%;
+    color:grey;
 }
 .S-card{
     width:100%;
@@ -456,20 +473,24 @@ background: linear-gradient(
     backdrop-filter: blur(20px);
     overflow:hidden;
 }
+#side-bar nav{
+    list-style:none;
+}
 #side-bar nav a{
-    color:white;
+    color:rgb(178, 246, 6);
     text-decoration: none;
+    
 }
-.Body{
-    display:block;
-}
+
+
 
     body{
         font-size:small;
+        margin:0;
+        
     }
     #navbar{
         width:100%;
-        box-sizing:border-box;
         flex-direction:column;
         text-align:center;
 
@@ -500,13 +521,7 @@ background: linear-gradient(
         align-items:center;
         
     }
-    .text{
-        display:flex;
 
-        justify-content:center;
-        align-items:center;
-        
-    }
     .Hero-wrapper{
         display:flex;
         flex-direction:column;  
@@ -529,13 +544,14 @@ background: linear-gradient(
         justify-content:center;
         align-items:center;
     }
+    
     .A-Projects{
         display:flex;
         flex-direction:column;
     }
-    .text p{
-        width:100%;
-    }
+  .S-card{
+    max-width:250px;
+  }
 
     .Stats{
         display:flex;
@@ -546,6 +562,7 @@ background: linear-gradient(
         border:1px solid rgba(255,255,255,0.1);
         width:300px;
         height:400px;
+
     }
 
     .stat{
@@ -560,24 +577,23 @@ background: linear-gradient(
         padding:30px 20px;
     }
 
-    .Services{
+    #Services{
         padding:30px 20px;
+        display:flex;
+        flex-direction:column;
+        
+    }
+    .card{
+        max-width:280px;
     }
 
     .card a{
-        width:100%;
-        text-align:center;
+        width: 100%;
+        display:flex;
+
     }
 
 }
 .Body{
     display:block;
-}
-.Maintenance{
-    display:none;
-    color:white;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
 }

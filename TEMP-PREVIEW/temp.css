@@ -5,6 +5,7 @@ body{
     align-items:center;
     font-family:sans-serif;
     background-color:#F4F7F6;
+    font-size:small;
 }
 .navbar{
     display:flex;
@@ -80,4 +81,9 @@ body{
 .btn{
     padding:10px 12px;
 
+}
+@media (max-width:768px){
+    .Container{
+        max-width:250px;
+    }
 }

@@ -69,4 +69,13 @@ span{
     text-align:left;
     list-style:none;
 }
+@media (max-width:768px){
+    .container{
+        font-size:small;
+        max-width:280px;
+    }
+    .input input{
+        padding:3px;
+    }
+}
 
